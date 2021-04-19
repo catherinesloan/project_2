@@ -3,6 +3,7 @@
 import os
 import numpy as np
 import pandas as pd
+import psycopg2
 
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
