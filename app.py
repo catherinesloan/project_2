@@ -41,8 +41,8 @@ db = SQLAlchemy(app)
 
 # rds_connection_string = f"{username}:{password}@localhost:5432/project_2"
 # engine = create_engine(f'postgresql://{rds_connection_string}')
-
-engine = create_engine(os.environ.get("DATABASE_URL"))
+database_uri = os.environ.get("DATABASE_URL").replace("://","ql://",1)
+engine = create_engine(database_uri)
 
 names = engine.table_names()
 
