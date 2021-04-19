@@ -7,7 +7,8 @@ meta = MetaData()
 connection = os.environ.get('DATABASE_URL', '') or "sqlite:///db.sqlite"
 
 print("connection to databse")
-engine = create_engine(connection)
+database_uri = os.environ.get("DATABASE_URL").replace("://","ql://",1)
+engine = create_engine(database_uri)
 
 if not engine.has_table("electoral_division"):
     print("Creating Table")
@@ -16,7 +17,7 @@ if not engine.has_table("electoral_division"):
         'electoral_division', meta,
         Column('division_id', Integer, primary_key=True),
         Column('electoral_division', String),
-        Column('state', string)
+        Column('state', String)
     )
 
     
