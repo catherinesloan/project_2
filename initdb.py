@@ -76,7 +76,7 @@ if not engine.has_table("election_results"):
     """
     seed_data = list()
 
-    with open('data/02-output_election_results02-election_results.csv', newline='') as input_file:
+    with open('data/02-output_election_results/02-election_results.csv', newline='') as input_file:
         reader = csv.DictReader(input_file)       #csv.reader is used to read a file
         for row in reader:
             seed_data.append(row)
