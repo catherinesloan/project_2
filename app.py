@@ -23,6 +23,7 @@ from flask_sqlalchemy import SQLAlchemy
 # from login import password
 username = os.environ.get("username")
 password = os.environ.get("password")
+API_KEY=os.getenv("API_KEY")
 
 
 # Setting up our Flask application.
