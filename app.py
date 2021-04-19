@@ -23,7 +23,7 @@ from flask_sqlalchemy import SQLAlchemy
 # from login import password
 username = os.environ.get("username")
 password = os.environ.get("password")
-API_KEY = os.getenv("API_KEY")
+
 
 
 # Setting up our Flask application.
@@ -84,7 +84,7 @@ def home():
 @app.route("/electorates_map")
 def electorates_map():
     
-    return render_template("map.html", API_KEY=API_KEY)
+    return render_template("map.html")
 
 # create route that renders bar chart data table
 @app.route("/bar_table")
