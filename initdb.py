@@ -3,9 +3,9 @@ import csv
 from sqlalchemy import create_engine, Table, Column, Float, Integer, String, MetaData
 
 meta = MetaData()
-
 connection = os.environ.get('DATABASE_URL', '') or "sqlite:///db.sqlite"
 
+# electoral_division table 
 print("connection to databse")
 database_uri = os.environ.get("DATABASE_URL").replace("://","ql://",1)
 engine = create_engine(database_uri)
@@ -20,7 +20,6 @@ if not engine.has_table("electoral_division"):
         Column('state', String)
     )
 
-    
     meta.create_all(engine)
     
     print("Table created")
@@ -48,10 +47,7 @@ else:
     print("Table already exists")
 
 
-
-
-
-
+# election_results table 
 if not engine.has_table("election_results"):
     print("Creating Table")
 
@@ -93,11 +89,7 @@ else:
     print("Table already exists")
 
 
-
-
-
-
-
+# election_vote_types table
 if not engine.has_table("election_vote_types"):
     print("Creating Table")
 
@@ -139,10 +131,7 @@ else:
     print("Table already exists")
 
 
-
-
-
-
+# election_turnout table
 if not engine.has_table("election_turnout"):
     print("Creating Table")
 
@@ -181,11 +170,7 @@ else:
     print("Table already exists")
 
 
-
-
-
-
-
+# marriage_postal_results table
 if not engine.has_table("marriage_postal_results"):
     print("Creating Table")
 
@@ -226,12 +211,7 @@ else:
     print("Table already exists")
 
 
-
-
-
-
-
-
+# marriage_postal_turnout table
 if not engine.has_table("marriage_postal_turnout"):
     print("Creating Table")
 
@@ -270,12 +250,7 @@ else:
     print("Table already exists")
 
 
-
-
-
-
-
-
+# marriage_postal_participants_by_age
 if not engine.has_table("marriage_postal_participants_by_age"):
     print("Creating Table")
 
@@ -316,14 +291,7 @@ else:
     print("Table already exists")
 
 
-
-
-
-
-
-
-
-
+# cultural_diversity table
 if not engine.has_table("cultural_diversity"):
     print("Creating Table")
 
@@ -363,13 +331,7 @@ else:
     print("Table already exists")
 
 
-
-
-
-
-
-
-
+# education table
 if not engine.has_table("education"):
     print("Creating Table")
 
@@ -407,11 +369,7 @@ else:
     print("Table already exists")
 
 
-
-
-
-
-
+# labor_liberal_votes
 if not engine.has_table("labor_liberal_votes"):
     print("Creating Table")
 
@@ -452,8 +410,5 @@ else:
     print("Table already exists")
 
 
-
-
-
-
+# print statement to check
 print("initdb complete")

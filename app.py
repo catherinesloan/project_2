@@ -1,5 +1,4 @@
 # This creates our flask app
-
 import os
 import numpy as np
 import pandas as pd
@@ -23,8 +22,6 @@ from flask_sqlalchemy import SQLAlchemy
 # from login import password
 username = os.environ.get("username")
 password = os.environ.get("password")
-
-
 
 # Setting up our Flask application.
 app = Flask(__name__)
@@ -70,8 +67,6 @@ Labor_Liberal = Base.classes.labor_liberal_votes
 session = Session(engine)
 
 # print(names)
-
-
 
 # create route that renders index.html template
 @app.route("/")
