@@ -1,5 +1,10 @@
 # Project-2
 
+## Heroku deployment
+
+The project has been deployed to Heroku and the visualisation is available at: 
+https://ausmarriagelawpostalsurvey.herokuapp.com/
+
 ## Project Overview
 
 This project creates a relational database and has been used for trend analysis on the 2016 Federal Election and Marriage Postal Survey results in relation to the Australian electoral divisions. It includes data about the 2016 Australian Federal Elections, the 2017 Australian Marriage Law Postal Survey and the Commonwealth Electorates.
@@ -112,10 +117,6 @@ Improvements:
 - Trend analysis at a glance whether a similar trend can be identified between age, education and voting behaviour across all states or whether the trend is different within each state
 
 
-## Heroku deployment
-
-The project has been deployed to Heroku and the visualisation is available at: 
-https://ausmarriagelawpostalsurvey.herokuapp.com/
 
 
 
