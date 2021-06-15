@@ -141,7 +141,7 @@ function starting_plots(index){
                     thickness: 10,
                     y: 0.5,
                     ypad: 0,
-                    title: '% Labour Votes',
+                    title: '% Labor Votes',
                     titleside: 'bottom',
                     outlinewidth: 1,
                     outlinecolor: 'black',
@@ -159,7 +159,7 @@ function starting_plots(index){
         var layout = {
             title: `${stateNames[index]}: Higher Education Percentage vs. 2016 Federal Election Votes <br> Bubble Size Represents Percentage of Yes Votes`,
             xaxis: {
-             title: "Labor Votes in 2016 Federal Election (As % of All Labor and Liberal Votes)"
+             title: "Labour Votes in 2016 Federal Election (As % of All Labour and Liberal Votes)"
             },
             yaxis: {
                 title: "Electorate Population With Higher Education (%)"
