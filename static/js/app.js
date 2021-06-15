@@ -141,7 +141,7 @@ function starting_plots(index){
                     thickness: 10,
                     y: 0.5,
                     ypad: 0,
-                    title: '% Labor Votes',
+                    title: '% Labour Votes',
                     titleside: 'bottom',
                     outlinewidth: 1,
                     outlinecolor: 'black',
